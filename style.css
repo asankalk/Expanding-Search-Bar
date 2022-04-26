@@ -6,3 +6,53 @@
 body {
     background: #101010;
 }
+
+.search-bar{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 70px;
+    background: #3d3d3d;
+    line-height: 40px;
+    padding: 15px;
+    border-radius: 60px;
+    cursor: pointer;
+}
+
+.search-input{
+    background: #3d3d3d;
+    color: #fff;
+    outline: none;
+    border: none;
+    line-height: 40px;
+    width: 0px;
+    float: left;
+    font-size: 1em;
+    transition: 0.7s ease;
+}
+
+.search-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    background: #3d3d3d;
+    padding: 12px;
+    border-radius: 50%;
+    float: right;
+    color: #f8ff00;
+    transition: 0.4s ease;
+}
+
+.search-bar:hover > .search-input, 
+.search-input:focus{
+    width: 240px;
+    margin: 0px 8px;
+}
+
+.search-bar:hover > .search-btn,
+.search-input:focus + .search-btn{
+    background: #f8ff00;
+    color: #101010;
+}
